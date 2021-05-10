@@ -66,6 +66,7 @@ a:hover {
     -webkit-text-fill-color: #F7F9FB;
     font-weight: 800;
     font-family: "Open Sans";
+    margin-left: 80px;
 }
 
 .full-width-image {
@@ -105,27 +106,36 @@ a:hover {
     margin: 0 auto;
 }
 
-.flex {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    padding: 10px;
+.icon-content {
     width: 100%;
     margin: 0 auto;
 }
 
-.flex-image img {
-    flex-basis: 30%;
-    border-radius: 50%;
+div.parent {
+    display: flex;
+    justify-content: space-between;
 }
 
-.flex-image p {
-    flex-basis: 70%;
-    color: #000;
+div.parent .child-icon img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 15%;
+}
+
+div.parent .child-icon {
+    flex-basis: 40%;
+}
+
+div.parent .child-text {
+    flex-basis: 60%;
+}
+
+div.parent .child-text p {
+    color: #31708E;
+    font-size: 1.5em;
     text-align: justify;
-    margin: 0 auto;
-    padding: 10px;
-    font-family: "Open Sans";
+    line-height: 1.5;
 }
 
 /*********************************************************************
